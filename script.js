@@ -16,9 +16,13 @@ var operations = function() {
             case "/": res = n1/n2; break;
         };
 
-        $("#res").append("<tr><td>"+n1+"</td><td>"+n2+"</td><td>"+sign+"</td><td>"+res+"</td></tr>");
+        $("#res").append("<tr><td>"+n1+"</td><td>"+n2+"</td><td>"+sign+"</td><td>"+res+"</td><td><button class=\"btnDelete\">Delete</button></td></tr>");
         
     }
+
+    $("#res").on('click', '.btnDelete', function () {
+        $(this).closest('tr').remove();
+    });
 }
 
 document.addEventListener("DOMContentLoaded", operations);
