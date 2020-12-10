@@ -1,6 +1,13 @@
 <html>
     <head>
         <title> JSEX3 </title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <h1>CALCULATOR</h1>
@@ -11,7 +18,12 @@
         <button id="mult">*</button>
         <button id="div">/</button>
         <br><br>
-        <label id="res"></label>
+        <table id="res" width="50%">
+            <th> 1ST </th>
+            <th> 2ND </th>
+            <th> OP </th>
+            <th> RESULT </th>        
+        </table>
         <script src="script.js"></script>
         <script
             src="http://code.jquery.com/jquery-3.5.1.min.js"
